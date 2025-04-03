@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+    <title>Shiv Villa</title>
+    <link rel="icon" type="image/png" href="pic/house.png">
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .header{
+            position: sticky; /*for Stuck the Navbar of Scrolling time */
+            top: 0% ;
+            background-color: rgb(255, 255, 255);
+            align-items: center;
+            height: 50px;
+            display: flex;
+        }
+        .header .logo{
+
+            margin-left: 50px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .header .links{
+
+            margin-left: auto;
+            margin-right: 100px;
+
+        }
+        .header .links a{
+            
+            top:0;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        .home{
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url(pic/canyon-1740973.jpg);
+            background-repeat: no-repeat;
+            background-size:cover; /*whole page is cover bt image*/
+            background-position: center;
+            height: 300px;
+            width: 100%;
+        }
+        .home h1{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+           padding: 20px;
+           padding-top: 65px;
+            font-size: 50PX;
+        }
+        .header .links .active {
+            color: red;
+        }
+        .contact h5{
+            color: red;
+            margin-top: 5%;
+            margin-left: 5%;
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .contact h3{
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+            margin-left: 5%;
+            font-size: 40px;
+            font-family:sans-serif
+        }
+        .contact h1{
+            color: rgb(36, 36, 36);
+            margin-top: 30px;
+            margin-left: 5%;
+            font-size: 15px;
+            font-weight: lighter;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        .contact_card{
+            background-color: rgb(255, 255, 255);
+            height: 100px;
+            width: 300px;
+            box-shadow: 1PX 1PX 11PX 1PX rgba(0, 0, 0, 0.201);
+            margin-left: 5%;
+            margin-top: 2%;
+            border-radius: 20px;
+            margin-bottom: 2%;
+            display:flex;
+        }
+        .contact_2{
+            background-color: rgb(255, 255, 255);
+            height: 100px;
+            width: 300px;
+            box-shadow: 1PX 1PX 11PX 1PX rgba(0, 0, 0, 0.201); /*for Shadow purpose */
+            margin-left: 5%;
+            margin-top: 2%;
+            border-radius: 20px;
+            margin-bottom: 2%;
+            display:flex; /*for part of 2 side of display */
+
+        }
+        .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(0, 0, 0);
+   color: white;
+   text-align: center;
+}
+
+        
+    </style>
+</head>
+<body>
+  
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">SHIV VILLA</h5>
+            </div>
+            <div class="links">
+                <a  href="index.html">HOME</a>
+                <a href="property.html">PROPERTY</a>
+                <a href="property_det.html">PROPERTY DETAIL</a>
+                <a  class="active" href="contactus.html">CONTACT US</a>
+            </div>
+        </div>
+        <div class="home">
+            <H1 style="text-align: center; color: rgb(255, 255, 255);">CONTACT US!<BR>
+                <P style="font-size: small; color: rgb(255, 255, 255);font-family: Arial, Helvetica, sans-serif;padding-top: 1%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<BR> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</P>
+        </div>
+        <div class="contact">
+            <h5>I CONTACT US</h5>
+            <h3>Get In Touch <br>With Your Agent</h3>
+            <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h1> 
+        </div>
+       <div class="contact_card">
+        <img src="pic/telephone.gif" height="100" width="100">
+        <h2 style="color: rgb(0, 0, 0); padding-top: 30px; padding-left: 10px; font-size: 22px;">91 63515 91504<br><span style="color: rgb(255, 0, 0); font-size:17px;">Sahil Patel</span></h2>  
+       </div>
+       <div class="contact_2">
+        <img src="pic/Animation - 1743484672752.gif" height="100" width="100">
+        <h2 style="color: rgb(0, 0, 0); padding-top: 33px; padding-left: 1px; padding-bottom: 10px; font-size: 15px;">thedesigniumhub@gmail.com<br><span style="color: rgb(255, 0, 0); font-size:17px;">Sahil Patel</span></h2>  
+       
+       </div>
+
+        
+    </div>
+    <div class="footer">
+        <p>Copyright © 2025  Shiv Villa Agency Co., Ltd. All rights reserved.</p>
+      </div>
+</body>
+</html>
