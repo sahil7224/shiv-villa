@@ -34,12 +34,27 @@
             animation-duration: 3s;
             animation-delay: 1s;
         }
+
         @keyframes example {
-                0% {background-color: rgb(255, 0, 0); left:0px; top:0px;} 
-                50% {background-color: yellow; left:200px; top:0px;}
-                100% {background-color: rgb(255, 255, 255); left:0px; top:0px;}
-                }
-        
+            0% {
+                background-color: rgb(255, 0, 0);
+                left: 0px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            100% {
+                background-color: rgb(255, 255, 255);
+                left: 0px;
+                top: 0px;
+            }
+        }
+
 
         .header .links {
             margin-left: auto;
@@ -185,22 +200,27 @@
             padding-top: 15px;
             text-align: center;
             align-items: center;
+   
         }
     </style>
 </head>
 
 <body>
+ 
 
     <div class="main">
         <div class="header">
             <div class="logo">
-                <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 25px;">SHIV VILLA</h5>
+                <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 25px;">SHIV VILLA
+                </h5>
             </div>
             <div class="links">
                 <a class="active" href="http://127.0.0.1:5500/Project/index.html">HOME</a>
                 <a href="property.html">PROPERTY</a>
                 <a href="property_det.html">PROPERTY DETAIL</a>
                 <a href="contactus.html">CONTACT US</a>
+                <a>BOOK DATE</a>
+                <input type="date" id="birthday">
             </div>
         </div>
         <div class="home">
@@ -256,6 +276,7 @@
         <div class="inform">
         </div>
         <footer>Copyright © 2048 Shiv Villa Agency Co., Ltd. All rights reserved.</footer>
+
     </div>
 
 

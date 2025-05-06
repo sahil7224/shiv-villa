@@ -1,26 +1,30 @@
 <!DOCTYPE html>
+
 <head>
     <title>Shiv Villa</title>
     <link rel="icon" type="image/png" href="pic/house.png">
 
     <style>
-        .main{
+        .main {
             height: 2000px;
         }
-                .header .links a:hover{
-           color: red;
+
+        .header .links a:hover {
+            color: red;
         }
-        
-        *{
+
+        * {
             margin: 0%;
             padding: 0%;
         }
-        .header{
+
+        .header {
             background-color: rgb(255, 255, 255);
             align-items: center;
             height: 50px;
             display: flex;
         }
+
         .header .logo {
             width: 150px;
             height: 100%;
@@ -30,18 +34,34 @@
             animation-duration: 3s;
             animation-delay: 1s;
         }
+
         @keyframes example {
-                0% {background-color: rgb(47, 0, 255); left:0px; top:0px;} 
-                50% {background-color: rgb(114, 117, 255); left:200px; top:0px;}
-                100% {background-color: rgb(255, 255, 255); left:0px; top:0px;}
-                }
-        
-        .header .links{
+            0% {
+                background-color: rgb(47, 0, 255);
+                left: 0px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: rgb(114, 117, 255);
+                left: 200px;
+                top: 0px;
+            }
+
+            100% {
+                background-color: rgb(255, 255, 255);
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .header .links {
             margin-left: auto;
             margin-right: 100px;
 
         }
-        .header .links a{
+
+        .header .links a {
             text-decoration: none;
             font-weight: bold;
             color: black;
@@ -49,56 +69,113 @@
             margin-right: 10px;
             font-size: 15px;
         }
-        .home{
-            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(pic/villa-5102547.jpg);
+
+        .home {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(pic/villa-5102547.jpg);
             background-repeat: no-repeat;
-            background-size:cover; 
+            background-size: cover;
             background-position: center;
             height: 300px;
             width: 100%;
         }
-        .home h1{
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-           padding: 20px;
-           padding-top: 65px;
+
+        .home h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 20px;
+            padding-top: 65px;
             font-size: 50PX;
         }
+
         .header .links .active {
             color: red;
         }
-       
-     
-        
-  
-        
-        
+
+        .pagination {
+            display: inline-block;
+            padding-left: 43%;
+
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 15px;
+            text-decoration: none;
+            border: 1px solid black;
+            margin: 0 3px;
+            align-items: center;
+            border-radius: 5px;
+            border-color: #878787;
+
+        }
+
+        .pagination a.active {
+            background-color: #191b1c;
+            color: white;
+
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #00ff2a;
+
+        }
     </style>
 </head>
-<body>
-  
-    <div class="main">
-        <div class="header">
-            <div class="logo">
-                <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 25px;">SHIV VILLA</h5>
-            </div>
-            <div class="links">
-                <a  href="index.html">HOME</a>
-                <a href="property.html">PROPERTY</a>
-                <a class="active" href="property_det.html">PROPERTY DETAIL</a>
-                <a href="contactus.html">CONTACT US</a>
-            </div>
-        </div>
-        <div class="home">
-            <H1 style="text-align: center; color: rgb(255, 255, 255);">SINGLE PROPERTY<BR>
-                <P style="font-size: small; color: rgb(255, 255, 255);font-family: Arial, Helvetica, sans-serif;padding-top: 1%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<BR> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</P>
-        </div>
-        <div class="image">
-            <img src="pic/single-property.png" width="1000" height="500" style="margin: 5%;">
-        </div>
 
-     
-        
-    </div>
-    
-</body>
-</html>
+<body>
+
+
+
+
+
+        <div class="main">
+            <div class="header">
+                <div class="logo">
+                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 25px;">SHIV VILLA
+                    </h5>
+                </div>
+                <div class="links">
+                    <a href="index.html">HOME</a>
+                    <a href="property.html">PROPERTY</a>
+                    <a class="active" href="property_det.html">PROPERTY DETAIL</a>
+                    <a href="contactus.html">CONTACT US</a>
+                    <a>BOOK DATE</a>
+                    <input type="date" id="birthday">
+                </div>
+            </div>
+            <div class="home">
+                <H1 style="text-align: center; color: rgb(255, 255, 255);">SINGLE PROPERTY<BR>
+                    <P
+                        style="font-size: small; color: rgb(255, 255, 255);font-family: Arial, Helvetica, sans-serif;padding-top: 1%;">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<BR> Lorem Ipsum has been
+                            the industry's standard dummy text ever since the 1500s,</P>
+                </div>
+                    <div class="image">
+                        <img src="pic/single-property.png" width="1000" height="500" style="margin: 5%;">
+                    </div>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a class="active" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                    <p id=”demo”></p>
+
+                 
+              
+                    <p id="demo"></p> 
+                    <script>
+                    
+                    const d = new Date();
+                    document.getElementById("demo").innerHTML = d;
+                    
+                    </script>
+                 
+            </div>
+
+        </body>
+
+</html >
